@@ -12,7 +12,11 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: redes
+        - id: paquetes
           uri: lb://paquetes
           predicates:
             - Path=/paquetes/**
+        - id: paquetesinternet
+          uri: lb://paquetesinternet
+          predicates:
+            - Path=/paquetesinternet/**            
