@@ -19,4 +19,8 @@ spring:
         - id: paquetesinternet
           uri: lb://paquetesinternet
           predicates:
-            - Path=/paquetesinternet/**            
+            - Path=/paquetesinternet/**
+        - id: recargas
+          uri: lb://recargas
+          predicates:
+            - Path=/recargas/**
